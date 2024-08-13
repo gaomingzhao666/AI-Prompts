@@ -1,8 +1,10 @@
 <script lang="ts">
-	import Button from '$lib/components/ui/button/button.svelte';
+	import DarkModeSwitcher from '$lib/components/DarkModeSwitcher.svelte';
+	import Dropdown from '$lib/components/Dropdown.svelte';
 	import { cn } from '$lib/utils';
 	import { AlignJustify, XIcon } from 'lucide-svelte';
 	import { fly } from 'svelte/transition';
+	// import DockMenu from '$lib/components/magic/dockmenu/DockMenu.svelte';
 
 	const menuItem = [
 		{
@@ -53,12 +55,11 @@
 	<div class="container flex h-14 items-center justify-between">
 		<a class="text-md flex items-center" href="/"> AI Prompts </a>
 
-		<div class="ml-auto flex h-full items-center">
-			<a class="mr-6 text-sm" href="/signin"> Log in </a>
-			<Button variant="secondary" class="mr-6 text-sm" href="/signup">Sign up</Button>
+		<div class="hidden items-center md:flex">
+			<Dropdown />
+			<DarkModeSwitcher />
 		</div>
 		<button class="ml-6 md:hidden" use:toggleOverflowHidden>
-			<span class="sr-only">Toggle menu</span>
 			{#if hamburgerMenuIsOpen}
 				<XIcon strokeWidth={1.4} class="text-gray-300" />
 			{:else}
@@ -82,7 +83,7 @@
 >
 	{#if hamburgerMenuIsOpen === true}
 		<div class="container flex h-14 items-center justify-between">
-			<a class="text-md flex items-center" href="/"> Svee UI </a>
+			<a class="text-md flex items-center" href="/"> AI Prompts </a>
 
 			<button class="md:hidden" use:toggleOverflowHidden>
 				<span class="sr-only">Toggle menu</span>
