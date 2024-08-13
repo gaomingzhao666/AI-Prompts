@@ -8,13 +8,11 @@
 
 <DropdownMenu.Root>
 	<DropdownMenu.Trigger asChild let:builder>
-		<Button variant="outline" builders={[builder]}>
-			<Languages />
+		<Button variant="outline" builders={[builder]} size="icon">
+			<Languages class="h-[1.2rem] w-[1.2rem]" />
 		</Button>
 	</DropdownMenu.Trigger>
-	<DropdownMenu.Content class="w-56">
-		<DropdownMenu.Label>Language Switch</DropdownMenu.Label>
-		<DropdownMenu.Separator />
+	<DropdownMenu.Content>
 		<DropdownMenu.RadioGroup bind:value={position}>
 			<DropdownMenu.RadioItem value="top">English</DropdownMenu.RadioItem>
 			<DropdownMenu.RadioItem value="bottom">简体中文</DropdownMenu.RadioItem>

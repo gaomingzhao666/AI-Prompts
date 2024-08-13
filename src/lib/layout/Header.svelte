@@ -1,10 +1,9 @@
 <script lang="ts">
 	import DarkModeSwitcher from '$lib/components/DarkModeSwitcher.svelte';
-	import Dropdown from '$lib/components/Dropdown.svelte';
+	import LangSwitcher from '$lib/components/LangSwitcher.svelte';
 	import { cn } from '$lib/utils';
 	import { AlignJustify, XIcon } from 'lucide-svelte';
 	import { fly } from 'svelte/transition';
-	// import DockMenu from '$lib/components/magic/dockmenu/DockMenu.svelte';
 
 	const menuItem = [
 		{
@@ -55,8 +54,8 @@
 	<div class="container flex h-14 items-center justify-between">
 		<a class="text-md flex items-center" href="/"> AI Prompts </a>
 
-		<div class="hidden items-center md:flex">
-			<Dropdown />
+		<div class="hidden items-center md:flex md:space-x-3">
+			<LangSwitcher />
 			<DarkModeSwitcher />
 		</div>
 		<button class="ml-6 md:hidden" use:toggleOverflowHidden>
