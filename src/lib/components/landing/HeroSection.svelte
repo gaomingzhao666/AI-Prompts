@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { ArrowRightIcon } from 'lucide-svelte';
+	import OrbitingCircles from '$lib/components/magic/OrbitingCircles/OrbitingCircles.svelte';
+	import AnimatedBeamMultipleInput from '$lib/components/magic/AnimatedBeam/AnimatedBeamMultipleInput.svelte';
 	import AnimatedShinyText from '$lib/components/magic/AnimatedShinyText/AnimatedShinyText.svelte';
 	import BorderBeam from '$lib/components/magic/borderbeam/BorderBeam.svelte';
 	import Button from '$lib/components/ui/button/button.svelte';
@@ -42,44 +44,30 @@
 		Get optimized prompts for any AI tools and use cases
 	</p>
 	<Button
-		class="-translate-y-4 animate-fade-in gap-1 rounded-lg text-white opacity-0 ease-in-out [--animation-delay:600ms] dark:text-black"
+		class="mb-5 -translate-y-4 animate-fade-in gap-1 rounded-lg text-white opacity-0 ease-in-out [--animation-delay:600ms] dark:text-black"
 	>
 		<span>Get Started for free </span>
 		<ArrowRightIcon
 			class="ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1"
 		/>
 	</Button>
-	<div
-		use:inview={{
-			unobserveOnEnter: true,
-			rootMargin: '-100px'
-		}}
-		on:inview_change={handleChange}
-		class="relative mt-32 animate-fade-up opacity-0 [--animation-delay:400ms] [perspective:2000px] after:absolute after:inset-0 after:z-50 after:[background:linear-gradient(to_top,hsl(var(--background))_30%,transparent)]"
-	>
-		<div
-			class="rounded-xl border border-white/10 bg-white bg-opacity-[0.01] before:absolute before:bottom-1/2 before:left-0 before:top-0 before:size-full before:opacity-0 before:[background-image:linear-gradient(to_bottom,var(--color-one),var(--color-one),transparent_40%)] before:[filter:blur(180px)] {inView
-				? 'before:animate-image-glow'
-				: ''}"
-		>
-			<BorderBeam
-				size={200}
-				duration={12}
-				delay={0}
-				colorFrom="var(--color-one)"
-				colorTo="var(--color-two)"
-			/>
 
-			<img
-				src={HeroDarkImg}
-				alt="HeroDarkImage"
-				class="relative hidden size-full rounded-[inherit] border object-contain dark:block"
-			/>
-			<img
-				src={HeroLightImg}
-				alt="HeroLightImage"
-				class="relative block size-full rounded-[inherit] border object-contain dark:hidden"
-			/>
+	<div
+		class=" bg-white bg-opacity-[0.01] before:absolute before:bottom-1/2 before:left-0 before:top-0 before:size-full before:opacity-0 before:[background-image:linear-gradient(to_bottom,var(--color-one),var(--color-one),transparent_40%)] before:[filter:blur(180px)] {inView
+			? 'before:animate-image-glow'
+			: ''}"
+	>
+		<BorderBeam
+			size={300}
+			duration={12}
+			delay={0}
+			colorFrom="var(--color-one)"
+			colorTo="var(--color-two)"
+		/>
+
+		<div class="flex items-center justify-around">
+			<AnimatedBeamMultipleInput />
+			<OrbitingCircles />
 		</div>
 	</div>
 </section>
