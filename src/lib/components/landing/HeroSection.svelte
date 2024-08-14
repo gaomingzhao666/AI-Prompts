@@ -7,6 +7,7 @@
 	import Button from '$lib/components/ui/button/button.svelte';
 	import type { ObserverEventDetails } from 'svelte-inview';
 	import { inview } from 'svelte-inview';
+	import { goto } from '$app/navigation';
 
 	// Images
 	import HeroDarkImg from '$lib/imgs/hero-dark.png';
@@ -43,31 +44,20 @@
 	>
 		Get optimized prompts for any AI tools and use cases
 	</p>
-	<Button
-		class="mb-5 -translate-y-4 animate-fade-in gap-1 rounded-lg text-white opacity-0 ease-in-out [--animation-delay:600ms] dark:text-black"
-	>
-		<span>Get Started for free </span>
-		<ArrowRightIcon
-			class="ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1"
-		/>
-	</Button>
 
-	<div
-		class=" bg-white bg-opacity-[0.01] before:absolute before:bottom-1/2 before:left-0 before:top-0 before:size-full before:opacity-0 before:[background-image:linear-gradient(to_bottom,var(--color-one),var(--color-one),transparent_40%)] before:[filter:blur(180px)] {inView
-			? 'before:animate-image-glow'
-			: ''}"
-	>
-		<BorderBeam
-			size={300}
-			duration={12}
-			delay={0}
-			colorFrom="var(--color-one)"
-			colorTo="var(--color-two)"
-		/>
+	<a href="/prompts">
+		<Button
+			class="mb-5 -translate-y-4 animate-fade-in gap-1 rounded-lg text-white opacity-0 ease-in-out [--animation-delay:600ms] dark:text-black"
+		>
+			Get Started for free
+			<ArrowRightIcon
+				class="ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1"
+			/>
+		</Button>
+	</a>
 
-		<div class="flex items-center justify-around">
-			<AnimatedBeamMultipleInput />
-			<OrbitingCircles />
-		</div>
+	<div class="flex items-center justify-around">
+		<AnimatedBeamMultipleInput />
+		<OrbitingCircles />
 	</div>
 </section>
