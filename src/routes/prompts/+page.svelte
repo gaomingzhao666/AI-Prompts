@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { promptsSEO } from '$lib';
 	import { onMount } from 'svelte';
+	import PromptCard from '$lib/components/PromptCard.svelte';
 
-	let prompts;
+	let prompts: any;
 
 	const init = async () => {
 		const res = await fetch('/src/prompts.json').then((res) => res.json());
@@ -32,4 +33,17 @@
 	<meta name="twitter:site" content="@Sikandar_Bhide" />
 </svelte:head>
 
-<h1 class="mt-32 text-center">about pageasdasd</h1>
+{#each prompts as items}
+	<div>
+		<h1>{items.category}</h1>
+		{#each items as childItems}
+			<PromptCard
+				title={childItems.title}
+				desc={childItems.desc}
+				category={childItems.category}
+				models={childItems.models}
+				promptContent={childItems.promptContent}
+			/>
+		{/each}
+	</div>
+{/each}
