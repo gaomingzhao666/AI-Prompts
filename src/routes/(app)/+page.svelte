@@ -1,7 +1,7 @@
 <script>
 	import { seo } from '$lib';
 	import ClientSection from '$lib/components/landing/ClientSection.svelte';
-	import CtaSection from '$lib/components/landing/CtaSection.svelte';
+	import CaseShowerSection from '$lib/components/landing/CaseShowerSection.svelte';
 	import HeroSection from '$lib/components/landing/HeroSection.svelte';
 	import SphereMask from '$lib/components/magic/SphereMask/SphereMask.svelte';
 </script>
@@ -26,4 +26,4 @@
 <HeroSection />
 <ClientSection />
 <SphereMask />
-<CtaSection />
+<CaseShowerSection />
