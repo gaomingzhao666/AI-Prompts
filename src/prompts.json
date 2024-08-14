@@ -1,9 +1,12 @@
 {
-	"ExamplePrompt": {
-		"title": "Example Prompt",
-		"description": "This is an example prompt.",
-		"category": "example",
-		"models": ["GPT4o", "Gemini", "Claude3 Sonnet"],
-		"promptContent": "This is a Example"
-	}
+	"leaningJpanese": [
+		{
+			"title": "Example Prompt",
+			"desc": "This is an example prompt.",
+			"category": "leaningJpanese",
+			"models": ["GPT4o", "Gemini", "Claude3 Sonnet"],
+			"promptContent": "This is a Example"
+		},
+		{}
+	]
 }
