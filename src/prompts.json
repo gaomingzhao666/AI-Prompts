@@ -1,12 +1,41 @@
 {
-	"leaningJpanese": [
+	"japaneseMaster": [
 		{
-			"title": "Example Prompt",
-			"desc": "This is an example prompt.",
-			"category": "leaningJpanese",
-			"models": ["GPT4o", "Gemini", "Claude3 Sonnet"],
-			"promptContent": "This is a Example"
+			"title": "Katakana Killer",
+			"desc": "Convert katakana into English",
+			"category": "Japanese Master",
+			"models": ["GPT"],
+			"promptContent": "The phrase that I provided is a Japanese Katakana phrase, please translate or convert into English, and keep it clarity and concise."
 		},
-		{}
+		{
+			"title": "Grammar Interpreter",
+			"desc": "Explain grammar of japanese",
+			"category": "Japanese Master",
+			"models": ["GPT"],
+			"promptContent": "The phrase that I provided is a Japanese grammar, please explain it with English, keep it clarity and concise, and give some examples of usage."
+		},
+		{
+			"title": "Kanji Master",
+			"desc": "Explain Kanji of japanese",
+			"category": "Japanese Master",
+			"models": ["GPT"],
+			"promptContent": "The phrase that I provided is Japanese Kanji, please give me it's meaning and Hiragana, and then explain it with English, keep it clarity and concise, eventually give some examples of usage."
+		}
+	],
+	"codeMaster": [
+		{
+			"title": "Code Interpreter",
+			"desc": "Explain programming code",
+			"category": "Code Master",
+			"models": ["GPT", "Gemini", "Claude", "Llama"],
+			"promptContent": "Explain the following code I provided, tell me what is it doing, and give me some cases if necessary."
+		},
+		{
+			"title": "Bug Finder",
+			"desc": "Find Bugs in code",
+			"category": "Code Master",
+			"models": ["GPT", "Gemini", "Claude", "Llama"],
+			"promptContent": "Compile the following code I provided, tell me where is it wrong and how to fix it with clarity, precise and detailed words, eventually give me some cases if necessary."
+		}
 	]
 }
