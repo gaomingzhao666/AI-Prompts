@@ -1,16 +1,16 @@
 <script>
 	import GoogleSvg from '$lib/imgs/Google.svg';
 	import GitHubSvg from '$lib/imgs/GitHub.svg';
-	import UberSvg from '$lib/imgs/Uber.svg';
+	import MetaSvg from '$lib/imgs/Meta.svg';
 	import MicrosoftSvg from '$lib/imgs/Microsoft.svg';
-	import NotionSvg from '$lib/imgs/Notion.svg';
+	import ANTHROPSvg from '$lib/imgs/ANTHROP.svg';
 </script>
 
 <section id="clients" class="mx-auto max-w-7xl px-6 text-center md:px-8">
 	<div class="py-14">
 		<div class="mx-auto max-w-screen-xl px-4 md:px-8">
 			<h2 class="text-center text-sm font-semibold text-gray-600">
-				TRUSTED BY TEAMS FROM AROUND THE WORLD
+				BE POWERED TO AI MODELS FROM GIANT TECH COMPANIES
 			</h2>
 			<div class="mt-6">
 				<ul
@@ -46,8 +46,8 @@
 
 					<li>
 						<img
-							alt="Uber"
-							src={UberSvg}
+							alt="Meta"
+							src={MetaSvg}
 							class="h-8 w-28 px-2 dark:brightness-0 dark:invert"
 							width={28}
 							height={8}
@@ -55,10 +55,10 @@
 					</li>
 					<li>
 						<img
-							alt="Notion"
-							src={NotionSvg}
-							class="h-8 w-28 px-2 dark:brightness-0 dark:invert"
-							width={28}
+							alt="ANTHROP"
+							src={ANTHROPSvg}
+							class="h-8 w-32 px-2 dark:brightness-0 dark:invert"
+							width={32}
 							height={8}
 						/>
 					</li>
