@@ -1,65 +1,69 @@
-<script>
+<script lang="ts">
 	import Marquee from '$lib/components/magic/marquee/Marquee.svelte';
 	import CaseShowerCard from '$lib/components/CaseShowerCard.svelte';
+	import { onMount } from 'svelte';
 
-	// @types caseCard
-	// export let models: string[];
-	// export let title: string;
-	// export let desc: string;
-	// export let category: string;
-	// export let promptContent: string;
-	const reviews = [
-		{
-			models: ['GPT'],
-			title: '@Bhide',
-			desc: 'Noicee work. I love it. Keep it up.',
-			category: 'Language Learning',
-			promptContent: 'This is a Example'
-		},
-		{
-			models: ['GPT'],
-			title: '@Bhide',
-			desc: 'Noicee work. I love it. Keep it up.',
-			category: 'Language Learning',
-			promptContent: 'This is a Example'
-		},
-		{
-			models: ['GPT'],
-			title: '@Bhide',
-			desc: 'Noicee work. I love it. Keep it up.',
-			category: 'Language Learning',
-			promptContent: 'This is a Example'
-		},
-		{
-			models: ['GPT'],
-			title: '@Bhide',
-			desc: 'Noicee work. I love it. Keep it up.',
-			category: 'Language Learning',
-			promptContent: 'This is a Example'
-		},
-		{
-			models: ['GPT'],
-			title: '@Bhide',
-			desc: 'Noicee work. I love it. Keep it up.',
-			category: 'Language Learning',
-			promptContent: 'This is a Example'
-		},
-		{
-			models: ['GPT'],
-			title: '@Bhide',
-			desc: 'Noicee work. I love it. Keep it up.',
-			category: 'Language Learning',
-			promptContent: 'This is a Example'
-		}
-	];
+	let prompts;
+	// 	{
+	// 		models: ['GPT'],
+	// 		title: '@Bhide',
+	// 		desc: 'Noicee work. I love it. Keep it up.',
+	// 		category: 'Language Learning',
+	// 		promptContent: 'This is a Example'
+	// 	},
+	// 	{
+	// 		models: ['GPT'],
+	// 		title: '@Bhide',
+	// 		desc: 'Noicee work. I love it. Keep it up.',
+	// 		category: 'Language Learning',
+	// 		promptContent: 'This is a Example'
+	// 	},
+	// 	{
+	// 		models: ['GPT'],
+	// 		title: '@Bhide',
+	// 		desc: 'Noicee work. I love it. Keep it up.',
+	// 		category: 'Language Learning',
+	// 		promptContent: 'This is a Example'
+	// 	},
+	// 	{
+	// 		models: ['GPT'],
+	// 		title: '@Bhide',
+	// 		desc: 'Noicee work. I love it. Keep it up.',
+	// 		category: 'Language Learning',
+	// 		promptContent: 'This is a Example'
+	// 	},
+	// 	{
+	// 		models: ['GPT'],
+	// 		title: '@Bhide',
+	// 		desc: 'Noicee work. I love it. Keep it up.',
+	// 		category: 'Language Learning',
+	// 		promptContent: 'This is a Example'
+	// 	},
+	// 	{
+	// 		models: ['GPT'],
+	// 		title: '@Bhide',
+	// 		desc: 'Noicee work. I love it. Keep it up.',
+	// 		category: 'Language Learning',
+	// 		promptContent: 'This is a Example'
+	// 	}
+	// ];
 	// const run = async () => {
 	// 	const prompts = await fetch('/src/prompts.json').then((res) => res.json());
 	// 	console.log(prompts);
 	// };
 	// run();
+	const init = async () => {
+		const prompts = await fetch('/src/prompts.json').then((res) => res.json());
+		return prompts;
+	};
+	let firstRow: any = [];
+	let secondRow: any = [];
+	onMount(async () => {
+		prompts = await init();
 
-	let firstRow = reviews.slice(0, reviews.length / 2);
-	let secondRow = reviews.slice(reviews.length / 2);
+		firstRow = prompts.japaneseMaster;
+		secondRow = prompts.codeMaster;
+	});
 </script>
 
 <div

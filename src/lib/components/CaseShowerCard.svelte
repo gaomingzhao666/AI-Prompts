@@ -29,6 +29,14 @@
 	<blockquote class="mt-2 text-lg">{promptContent}</blockquote>
 
 	<!-- {#each  as } -->
-	<img class="mr-1 mt-2 rounded-full" width="24" height="24" alt="" src="/src/lib/imgs/GPT.svg" />
+	<div class="mt-3 h-[24px] w-[24px]">
+		<img
+			class="absolute bottom-5 left-5 rounded-full"
+			width="24"
+			height="24"
+			alt=""
+			src="/src/lib/imgs/GPT.svg"
+		/>
+	</div>
 	<!-- {/each} -->
 </figure>
