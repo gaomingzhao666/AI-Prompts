@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { cn } from '$lib/utils';
+	import { Copy } from 'lucide-svelte';
 
 	export let models: string[];
 	export let title: string;
@@ -10,7 +11,7 @@
 
 <figure
 	class={cn(
-		'relative w-80 cursor-pointer overflow-hidden rounded-2xl border p-5 ',
+		'animate-shine group relative w-80 cursor-pointer overflow-hidden rounded-2xl border border-white/10 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] p-5 px-4 py-5 transition-colors',
 		// light styles
 		'border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]',
 		// dark styles
@@ -24,6 +25,10 @@
 				{title}
 			</figcaption>
 			<p class="text-sm font-medium dark:text-white/40">{desc}</p>
+		</div>
+
+		<div class="group-hover:block group-hover:cursor-pointer md:hidden">
+			<Copy />
 		</div>
 	</div>
 	<blockquote class="mt-2 text-lg">{promptContent}</blockquote>

@@ -67,7 +67,8 @@ const config: Config = {
 				shimmer: 'shimmer 8s infinite',
 				marquee: 'marquee var(--duration) infinite linear',
 				'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
-				orbit: 'orbit calc(var(--duration)*1s) linear infinite'
+				orbit: 'orbit calc(var(--duration)*1s) linear infinite',
+				shine: 'shine 2s linear infinite'
 			},
 			keyframes: {
 				'accordion-down': {
@@ -127,6 +128,10 @@ const config: Config = {
 					'100%': {
 						transform: 'rotate(360deg) translateY(calc(var(--radius) * 1px)) rotate(-360deg)'
 					}
+				},
+				shine: {
+					from: { backgroundPosition: '0 0' },
+					to: { backgroundPosition: '-200% 0' }
 				}
 			}
 		}
