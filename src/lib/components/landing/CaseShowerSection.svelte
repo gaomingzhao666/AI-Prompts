@@ -1,45 +1,62 @@
 <script>
 	import Marquee from '$lib/components/magic/marquee/Marquee.svelte';
-	import CaseShower from '$lib/components/CaseShower.svelte';
+	import CaseShowerCard from '$lib/components/CaseShowerCard.svelte';
 
+	// @types caseCard
+	// export let models: string[];
+	// export let title: string;
+	// export let desc: string;
+	// export let category: string;
+	// export let promptContent: string;
 	const reviews = [
 		{
-			name: 'Bhide',
-			username: '@Bhide',
-			body: 'Noicee work. I love it. Keep it up.',
-			img: 'https://avatar.vercel.sh/jack'
+			models: ['GPT'],
+			title: '@Bhide',
+			desc: 'Noicee work. I love it. Keep it up.',
+			category: 'Language Learning',
+			promptContent: 'This is a Example'
 		},
 		{
-			name: 'Jodd',
-			username: '@Jodd',
-			body: 'Wooww, this is what I was looking for. Great work.',
-			img: 'https://avatar.vercel.sh/jill'
+			models: ['GPT'],
+			title: '@Bhide',
+			desc: 'Noicee work. I love it. Keep it up.',
+			category: 'Language Learning',
+			promptContent: 'This is a Example'
 		},
 		{
-			name: 'Pokie',
-			username: '@Pokie',
-			body: 'Svelte is Amazing and so are you. Keep it up.',
-			img: 'https://avatar.vercel.sh/john'
+			models: ['GPT'],
+			title: '@Bhide',
+			desc: 'Noicee work. I love it. Keep it up.',
+			category: 'Language Learning',
+			promptContent: 'This is a Example'
 		},
 		{
-			name: 'pablo',
-			username: '@pablo',
-			body: 'Remarkable Stuff broooo. Added to my favourites.',
-			img: 'https://avatar.vercel.sh/jane'
+			models: ['GPT'],
+			title: '@Bhide',
+			desc: 'Noicee work. I love it. Keep it up.',
+			category: 'Language Learning',
+			promptContent: 'This is a Example'
 		},
 		{
-			name: 'Saloni',
-			username: '@Saloni',
-			body: 'Acche hai, Chal mera Portfolio banade.',
-			img: 'https://avatar.vercel.sh/jenny'
+			models: ['GPT'],
+			title: '@Bhide',
+			desc: 'Noicee work. I love it. Keep it up.',
+			category: 'Language Learning',
+			promptContent: 'This is a Example'
 		},
 		{
-			name: 'Bhai',
-			username: '@Bhai',
-			body: 'Svelte made easy with these components. Great work.',
-			img: 'https://avatar.vercel.sh/james'
+			models: ['GPT'],
+			title: '@Bhide',
+			desc: 'Noicee work. I love it. Keep it up.',
+			category: 'Language Learning',
+			promptContent: 'This is a Example'
 		}
 	];
+	// const run = async () => {
+	// 	const prompts = await fetch('/src/prompts.json').then((res) => res.json());
+	// 	console.log(prompts);
+	// };
+	// run();
 
 	let firstRow = reviews.slice(0, reviews.length / 2);
 	let secondRow = reviews.slice(reviews.length / 2);
@@ -50,12 +67,12 @@
 >
 	<Marquee pauseOnHover class="[--duration:20s]">
 		{#each firstRow as item}
-			<CaseShower {...item} />
+			<CaseShowerCard {...item} />
 		{/each}
 	</Marquee>
 	<Marquee reverse pauseOnHover class="[--duration:20s]">
 		{#each secondRow as item}
-			<CaseShower {...item} />
+			<CaseShowerCard {...item} />
 		{/each}
 	</Marquee>
 	<div

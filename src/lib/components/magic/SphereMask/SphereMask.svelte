@@ -22,3 +22,6 @@
 		'after:absolute after:-left-1/2 after:top-1/2 after:aspect-[1/0.7] after:w-[200%] after:rounded-[50%] after:border-t after:border-[hsl(var(--border))] after:bg-background'
 	)}
 ></div>
+
+<!-- CaseShowerSection title -->
+<h1 class="-translate-y-10 text-center text-xl font-bold">Find Best Prompts for Your AI Model</h1>
