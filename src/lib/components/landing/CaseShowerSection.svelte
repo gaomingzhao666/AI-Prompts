@@ -3,8 +3,8 @@
 	import CaseShowerCard from '$lib/components/CaseShowerCard.svelte';
 	import { onMount } from 'svelte';
 
-	let prompts;
-	// 	{
+	let prompts: any;
+
 	// 		models: ['GPT'],
 	// 		title: '@Bhide',
 	// 		desc: 'Noicee work. I love it. Keep it up.',
@@ -53,13 +53,13 @@
 	// };
 	// run();
 	const init = async () => {
-		const prompts = await fetch('/src/prompts.json').then((res) => res.json());
-		return prompts;
+		const res = await fetch('/src/prompts.json').then((res) => res.json());
+		prompts = res;
 	};
 	let firstRow: any = [];
 	let secondRow: any = [];
 	onMount(async () => {
-		prompts = await init();
+		await init();
 
 		firstRow = prompts.japaneseMaster;
 		secondRow = prompts.codeMaster;

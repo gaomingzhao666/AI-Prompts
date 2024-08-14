@@ -1,5 +1,17 @@
 <script lang="ts">
 	import { promptsSEO } from '$lib';
+	import { onMount } from 'svelte';
+
+	let prompts;
+
+	const init = async () => {
+		const res = await fetch('/src/prompts.json').then((res) => res.json());
+		prompts = res;
+	};
+
+	onMount(() => {
+		init();
+	});
 </script>
 
 <svelte:head>
@@ -20,4 +32,4 @@
 	<meta name="twitter:site" content="@Sikandar_Bhide" />
 </svelte:head>
 
-<h1 class="text-center">about pageasdasd</h1>
+<h1 class="mt-32 text-center">about pageasdasd</h1>
