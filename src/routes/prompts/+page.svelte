@@ -3,15 +3,20 @@
 	import { onMount } from 'svelte';
 	import PromptCard from '$lib/components/PromptCard.svelte';
 
-	let prompts: any;
+	let prompts: any = new Map();
+
+	// let categories = ['']; // ["foo", "batz"]
 
 	const init = async () => {
 		const res = await fetch('/src/prompts.json').then((res) => res.json());
 		prompts = res;
+		// categories = Object.keys(prompts);
+		console.log(res);
 	};
 
-	onMount(() => {
-		init();
+	onMount(async () => {
+		await init();
+		console.log(prompts);
 	});
 </script>
 
@@ -33,17 +38,18 @@
 	<meta name="twitter:site" content="@Sikandar_Bhide" />
 </svelte:head>
 
-{#each prompts as items}
-	<div class="mt-32">
-		<h1>{items.category}</h1>
-		{#each items as childItems}
-			<PromptCard
-				title={childItems.title}
-				desc={childItems.desc}
-				category={childItems.category}
-				models={childItems.models}
-				promptContent={childItems.promptContent}
-			/>
-		{/each}
-	</div>
-{/each}
+<div class="mt-32">
+	{#each Object.keys(prompts) as category}
+		<div>
+			<h1>{category}</h1>
+
+			<ul>
+				{#each prompts[category] as prompt}
+					<li>
+						<PromptCard {...prompt} />
+					</li>
+				{/each}
+			</ul>
+		</div>
+	{/each}
+</div>

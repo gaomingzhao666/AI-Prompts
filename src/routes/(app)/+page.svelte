@@ -23,6 +23,7 @@
 	<meta name="twitter:image" content={indexSEO.image} />
 	<meta name="twitter:site" content="@Sikandar_Bhide" />
 </svelte:head>
+
 <HeroSection />
 <ClientSection />
 <SphereMask />
