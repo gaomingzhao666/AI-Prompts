@@ -34,7 +34,7 @@
 </svelte:head>
 
 {#each prompts as items}
-	<div>
+	<div class="mt-32">
 		<h1>{items.category}</h1>
 		{#each items as childItems}
 			<PromptCard
