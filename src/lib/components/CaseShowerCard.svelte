@@ -10,7 +10,7 @@
 
 <figure
 	class={cn(
-		'relative w-80 cursor-pointer overflow-hidden rounded-2xl border p-5 ',
+		'relative w-80 cursor-pointer overflow-hidden rounded-3xl border p-5 ',
 		// light styles
 		'border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]',
 		// dark styles
