@@ -37,6 +37,7 @@
 		"bits-ui": "^0.21.13",
 		"class-variance-authority": "^0.7.0",
 		"clsx": "^2.1.1",
+		"embla-carousel-svelte": "^8.1.8",
 		"formsnap": "^1.0.1",
 		"lucide-svelte": "^0.416.0",
 		"mode-watcher": "^0.4.1",
