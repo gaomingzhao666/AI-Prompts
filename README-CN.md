@@ -7,7 +7,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/gaomingzhao666/AI-Prompts">
-    <img src="/public/favicon.ico" alt="Logo" width="100" height="100">
+    <img src="/static/favicon.ico" alt="Logo" width="100" height="100">
   </a>
 
   <h3 align="center">AI Prompts</h3>
