@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { promptsSEO } from '$lib';
 	import { onMount } from 'svelte';
+	import * as Carousel from '$lib/components/ui/carousel/index.js';
 	import PromptCard from '$lib/components/PromptCard.svelte';
 
 	let prompts: any = new Map();
@@ -40,16 +41,27 @@
 
 <div class="mt-32">
 	{#each Object.keys(prompts) as category}
-		<div>
+		<div class="text-xl">
 			<h1>{category}</h1>
 
-			<ul>
-				{#each prompts[category] as prompt}
+			<!-- carousel -->
+			<div class="flex space-x-1">
+				<Carousel.Root>
+					<Carousel.Content>
+						{#each prompts[category] as prompt}
+							<Carousel.Item class="basis-1/3">
+								<PromptCard {...prompt} />
+							</Carousel.Item>
+						{/each}
+					</Carousel.Content>
+				</Carousel.Root>
+
+				<!-- {#each prompts[category] as prompt}
 					<li>
 						<PromptCard {...prompt} />
 					</li>
-				{/each}
-			</ul>
+				{/each} -->
+			</div>
 		</div>
 	{/each}
 </div>
