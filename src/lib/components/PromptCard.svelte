@@ -11,7 +11,7 @@
 
 <figure
 	class={cn(
-		'animate-shine group relative w-80 cursor-pointer overflow-hidden rounded-2xl border border-white/10 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] p-5 px-4 py-5 transition-colors',
+		'group relative max-h-80 w-96 overflow-hidden rounded-3xl border p-5',
 		// light styles
 		'border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]',
 		// dark styles
