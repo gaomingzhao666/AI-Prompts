@@ -39,17 +39,17 @@
 	<meta name="twitter:site" content="@Sikandar_Bhide" />
 </svelte:head>
 
-<div class="mt-32">
+<div class="mt-32 pl-5">
 	{#each Object.keys(prompts) as category}
-		<div class="text-xl">
-			<h1>{category}</h1>
+		<div class="my-20">
+			<h1 class="mb-5 text-2xl">{category}</h1>
 
 			<!-- carousel -->
-			<div class="flex space-x-1">
+			<div>
 				<Carousel.Root>
-					<Carousel.Content>
+					<Carousel.Content class="-ml-3">
 						{#each prompts[category] as prompt}
-							<Carousel.Item class="basis-1/3">
+							<Carousel.Item class="basis-50  pl-3  ">
 								<PromptCard {...prompt} />
 							</Carousel.Item>
 						{/each}
