@@ -96,6 +96,7 @@ $ npm run dev # 运行
 
 <p align="left">https://github.com/sveltejs/svelte/issues/9287</p>
 <p align="left">https://kit.svelte.dev/docs/configuration#alias</p>
+<p align="left"> https://www.freecodecamp.org/news/copy-text-to-clipboard-javascript/</p>
 
 <p align="right">(<a href="#readme-top">返回顶层</a>)</p>
 
