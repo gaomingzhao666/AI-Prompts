@@ -12,7 +12,8 @@
 			<Languages class="h-[1.2rem] w-[1.2rem]" />
 		</Button>
 	</DropdownMenu.Trigger>
-	<DropdownMenu.Content>
+
+	<DropdownMenu.Content class="w-44 font-bold">
 		<DropdownMenu.RadioGroup bind:value={position}>
 			<DropdownMenu.RadioItem value="top">English</DropdownMenu.RadioItem>
 			<DropdownMenu.RadioItem value="bottom">简体中文</DropdownMenu.RadioItem>
