@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { ArrowRightIcon } from 'lucide-svelte';
+	import { _ } from 'svelte-i18n';
 	import OrbitingCircles from '$lib/components/magic/OrbitingCircles/OrbitingCircles.svelte';
 	import AnimatedBeamMultipleInput from '$lib/components/magic/AnimatedBeam/AnimatedBeamMultipleInput.svelte';
 	import AnimatedShinyText from '$lib/components/magic/AnimatedShinyText/AnimatedShinyText.svelte';
@@ -24,7 +25,7 @@
 		class="backdrop-filter-[12px] group inline-flex h-7 -translate-y-4 animate-fade-in items-center justify-between gap-1 rounded-full border border-white/5 bg-white/10 px-3 text-xs transition-all ease-in hover:cursor-pointer hover:bg-white/20 dark:text-black"
 	>
 		<AnimatedShinyText class="inline-flex items-center justify-center">
-			<span>✨ Introducing AI Prompts</span>
+			<span>{$_('heroReleaseNotice')}</span>
 			{' '}
 			<ArrowRightIcon
 				class="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5"
@@ -34,22 +35,22 @@
 	<h1
 		class="-translate-y-4 animate-fade-in text-balance bg-gradient-to-br from-black from-30% to-black/40 bg-clip-text py-6 text-5xl font-medium leading-none tracking-tighter text-transparent opacity-0 [--animation-delay:200ms] dark:from-white dark:to-white/40 sm:text-6xl md:text-7xl lg:text-8xl"
 	>
-		AI Prompts is a fast Web App
+		{$_('heroTitleOnTop')}
 		<br class="hidden md:block" />
 		{' '}
-		powered by Svelte
+		{$_('heroTitleOnBottom')}
 	</h1>
 	<p
 		class="mb-12 -translate-y-4 animate-fade-in text-balance text-lg tracking-tight text-gray-400 opacity-0 [--animation-delay:400ms] md:text-xl"
 	>
-		Get optimized prompts for any AI tools and use cases
+		{$_('heroSubtitle')}
 	</p>
 
 	<a href="/prompts">
 		<Button
 			class="mb-5 -translate-y-4 animate-fade-in gap-1 rounded-lg text-white opacity-0 ease-in-out [--animation-delay:600ms] dark:text-black"
 		>
-			Get Started for free
+			{$_('heroButton')}
 			<ArrowRightIcon
 				class="ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1"
 			/>

@@ -2,6 +2,7 @@
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
 	import { Button } from '$lib/components/ui/button/index.js';
 	import { Languages } from 'lucide-svelte';
+	import { locale } from 'svelte-i18n';
 
 	let position = 'bottom';
 </script>
@@ -13,11 +14,17 @@
 		</Button>
 	</DropdownMenu.Trigger>
 
-	<DropdownMenu.Content class="w-44 font-bold">
+	<DropdownMenu.Content class="mt-2 w-44 font-bold">
 		<DropdownMenu.RadioGroup bind:value={position}>
-			<DropdownMenu.RadioItem value="top">English</DropdownMenu.RadioItem>
-			<DropdownMenu.RadioItem value="bottom">简体中文</DropdownMenu.RadioItem>
-			<DropdownMenu.RadioItem value="right">日本語</DropdownMenu.RadioItem>
+			<DropdownMenu.RadioItem value="top" on:click={() => locale.set('en')}
+				>English</DropdownMenu.RadioItem
+			>
+			<DropdownMenu.RadioItem value="bottom" on:click={() => locale.set('cn')}
+				>简体中文</DropdownMenu.RadioItem
+			>
+			<DropdownMenu.RadioItem value="right" on:click={() => locale.set('ja')}
+				>日本語</DropdownMenu.RadioItem
+			>
 		</DropdownMenu.RadioGroup>
 	</DropdownMenu.Content>
 </DropdownMenu.Root>

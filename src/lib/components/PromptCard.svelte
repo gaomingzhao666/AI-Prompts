@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { cn } from '$lib/utils';
 	import { Copy } from 'lucide-svelte';
+	import { toast } from 'svelte-sonner';
 	import * as Collapsible from '$lib/components/ui/collapsible';
 
 	export let models: string[];
@@ -9,8 +10,9 @@
 	export let category: string;
 	export let promptContent: string;
 
-	const copyContent = () => {
-		navigator.clipboard.writeText(promptContent);
+	const copyContent = async () => {
+		await navigator.clipboard.writeText(promptContent);
+		toast.success('Successfully copied to clipboard!');
 	};
 </script>
 

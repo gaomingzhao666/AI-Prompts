@@ -61,8 +61,8 @@
 	onMount(async () => {
 		await init();
 
-		firstRow = prompts.japaneseMaster;
-		secondRow = prompts.codeMaster;
+		firstRow = prompts.JapaneseMaster;
+		secondRow = prompts.CodeMaster;
 	});
 </script>
 

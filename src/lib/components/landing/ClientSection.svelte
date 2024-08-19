@@ -4,13 +4,14 @@
 	import MetaSvg from '$lib/imgs/Meta.svg';
 	import MicrosoftSvg from '$lib/imgs/Microsoft.svg';
 	import ANTHROPSvg from '$lib/imgs/ANTHROP.svg';
+	import { _ } from 'svelte-i18n';
 </script>
 
 <section id="clients" class="mx-auto max-w-7xl px-6 text-center md:px-8">
 	<div class="py-14">
 		<div class="mx-auto max-w-screen-xl px-4 md:px-8">
 			<h2 class="text-center text-sm font-semibold text-gray-600">
-				BE POWERED TO AI MODELS FROM GIANT TECH COMPANIES
+				{$_('clientsTitle')}
 			</h2>
 			<div class="mt-6">
 				<ul

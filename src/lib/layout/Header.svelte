@@ -56,7 +56,6 @@
 
 		<div class="hidden items-center md:flex md:space-x-3">
 			<a href="https://github.com/gaomingzhao666/AI-Prompts">
-				<!-- dark mode -->
 				<img
 					src="/src/lib/imgs/GithubDarkIcon.svg"
 					alt="GithubIcon"
@@ -72,6 +71,7 @@
 					class="block hover:cursor-pointer hover:opacity-80 dark:hidden"
 				/>
 			</a>
+
 			<LangSwitcher />
 			<DarkModeSwitcher />
 		</div>

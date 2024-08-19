@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { cn } from '$lib/utils';
+	import { _ } from 'svelte-i18n';
 	export let reverse: boolean = false;
 </script>
 
@@ -24,4 +25,4 @@
 ></div>
 
 <!-- CaseShowerSection title -->
-<h1 class="-translate-y-10 text-center text-xl font-bold">Find Best Prompts for Your AI Model</h1>
+<h1 class="-translate-y-10 text-center text-xl font-bold">{$_('promptsCasesTitle')}</h1>
