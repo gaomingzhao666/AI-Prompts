@@ -52,9 +52,26 @@
 >
 	<!-- {#if innerWidth < 768} -->
 	<div class="container flex h-14 items-center justify-between">
-		<a class="text-md flex items-center" href="/"> AI Prompts </a>
+		<a class="text-md flex items-center transition-all hover:font-bold" href="/"> AI Prompts </a>
 
 		<div class="hidden items-center md:flex md:space-x-3">
+			<a href="https://github.com/gaomingzhao666/AI-Prompts">
+				<!-- dark mode -->
+				<img
+					src="/src/lib/imgs/GithubDarkIcon.svg"
+					alt="GithubIcon"
+					width="32"
+					class="hidden hover:cursor-pointer hover:opacity-80 dark:block"
+				/>
+
+				<!-- light mode -->
+				<img
+					src="/src/lib/imgs/GithubIcon.svg"
+					alt="GithubIcon"
+					width="32"
+					class="block hover:cursor-pointer hover:opacity-80 dark:hidden"
+				/>
+			</a>
 			<LangSwitcher />
 			<DarkModeSwitcher />
 		</div>
@@ -93,6 +110,7 @@
 				{/if}
 			</button>
 		</div>
+
 		<ul
 			in:fly={{ y: -30, duration: 400 }}
 			class="flex flex-col uppercase ease-in md:flex-row md:items-center md:normal-case"
