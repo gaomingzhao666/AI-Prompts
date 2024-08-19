@@ -15,16 +15,10 @@
 	</DropdownMenu.Trigger>
 
 	<DropdownMenu.Content class="mt-2 w-44 font-bold">
-		<DropdownMenu.RadioGroup bind:value={position}>
-			<DropdownMenu.RadioItem value="top" on:click={() => locale.set('en')}
-				>English</DropdownMenu.RadioItem
-			>
-			<DropdownMenu.RadioItem value="bottom" on:click={() => locale.set('cn')}
-				>简体中文</DropdownMenu.RadioItem
-			>
-			<DropdownMenu.RadioItem value="right" on:click={() => locale.set('ja')}
-				>日本語</DropdownMenu.RadioItem
-			>
+		<DropdownMenu.RadioGroup>
+			<DropdownMenu.Item on:click={() => locale.set('en')}>English</DropdownMenu.Item>
+			<DropdownMenu.Item on:click={() => locale.set('cn')}>简体中文</DropdownMenu.Item>
+			<DropdownMenu.Item on:click={() => locale.set('ja')}>日本語</DropdownMenu.Item>
 		</DropdownMenu.RadioGroup>
 	</DropdownMenu.Content>
 </DropdownMenu.Root>
