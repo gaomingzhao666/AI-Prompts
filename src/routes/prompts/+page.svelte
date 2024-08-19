@@ -3,6 +3,7 @@
 	import { onMount } from 'svelte';
 	import * as Carousel from '$lib/components/ui/carousel/index.js';
 	import PromptCard from '$lib/components/PromptCard.svelte';
+	import { addSpaceBetweenUppercase } from '$lib/utils/addSpaceBetweenUppercase';
 
 	let prompts: any = new Map();
 
@@ -41,8 +42,8 @@
 
 <div class="mt-32 pl-5">
 	{#each Object.keys(prompts) as category}
-		<div class="my-20">
-			<h1 class="mb-5 text-2xl">{category}</h1>
+		<div class="my-16">
+			<h1 class="mb-5 text-2xl">{addSpaceBetweenUppercase(category)}</h1>
 
 			<!-- carousel -->
 			<div>
