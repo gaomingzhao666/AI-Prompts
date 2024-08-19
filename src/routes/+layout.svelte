@@ -1,6 +1,7 @@
 <script>
 	import '../app.css';
 	import { ModeWatcher } from 'mode-watcher';
+	import { Toaster } from '$lib/components/ui/sonner';
 	import Footer from '$lib/layout/Footer.svelte';
 	import Header from '$lib/layout/Header.svelte';
 </script>
@@ -14,3 +15,4 @@
 </div>
 
 <ModeWatcher defaultMode="dark" />
+<Toaster />
