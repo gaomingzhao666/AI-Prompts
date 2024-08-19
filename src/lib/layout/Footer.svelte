@@ -19,7 +19,7 @@
 					{' '}
 					{new Date().getFullYear()}
 					{' '}
-					<a href="/" class="cursor-pointer">Nano@Gaomingzhao</a>
+					<a href="https://github.com/gaomingzhao666" class="cursor-pointer">Nano@Gaomingzhao</a>
 				</span>
 			</div>
 		</div>
