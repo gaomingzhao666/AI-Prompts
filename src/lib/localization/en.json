@@ -1,3 +1,10 @@
 {
-	"hello": "Hello!"
+	"heroReleaseNotice": "✨ AI Prompts v1.2 is out of here",
+	"heroTitleOnTop": "AI Prompts is a fast Web App",
+	"heroTitleOnBottom": "powered by Svelte",
+	"heroSubtitle": "Get optimized prompts for any AI tools and use cases",
+	"heroButton": "Get Started for free",
+
+	"clientsTitle": "BE POWERED TO AI MODELS FROM GIANT TECH COMPANIES",
+	"promptsCasesTitle": "Find Best Prompts for AI Models"
 }

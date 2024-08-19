@@ -1,3 +1,10 @@
 {
-	"hello": "kon ni chi wa"
+	"heroReleaseNotice": "✨ AI Prompts v1.2 参上",
+	"heroTitleOnTop": "AI Prompts は高速な Web アプリです",
+	"heroTitleOnBottom": "Svelte によって与えされています",
+	"heroSubtitle": "どの AI ツールやユースケースにも最適化されたプロンプトを取得",
+	"heroButton": "無料で始める",
+
+	"clientsTitle": "巨大テクノロジー企業の AI モデルを活用",
+	"promptsCasesTitle": "AI モデルに最適なプロンプトを見つける"
 }
