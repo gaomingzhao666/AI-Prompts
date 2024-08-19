@@ -21,7 +21,7 @@
 
 <section id="hero" class="relative mx-auto mt-32 max-w-7xl px-6 text-center md:px-8">
 	<div
-		class="backdrop-filter-[12px] group inline-flex h-7 -translate-y-4 animate-fade-in items-center justify-between gap-1 rounded-full border border-white/5 bg-white/10 px-3 text-xs text-white opacity-0 transition-all ease-in hover:cursor-pointer hover:bg-white/20 dark:text-black"
+		class="backdrop-filter-[12px] group inline-flex h-7 -translate-y-4 animate-fade-in items-center justify-between gap-1 rounded-full border border-white/5 bg-white/10 px-3 text-xs transition-all ease-in hover:cursor-pointer hover:bg-white/20 dark:text-black"
 	>
 		<AnimatedShinyText class="inline-flex items-center justify-center">
 			<span>✨ Introducing AI Prompts</span>
@@ -56,7 +56,7 @@
 		</Button>
 	</a>
 
-	<div class="flex items-center justify-around">
+	<div class="flex flex-wrap items-center justify-around space-y-3">
 		<AnimatedBeamMultipleInput />
 		<OrbitingCircles />
 	</div>

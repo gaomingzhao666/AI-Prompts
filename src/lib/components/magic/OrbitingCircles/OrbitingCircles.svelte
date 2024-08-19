@@ -8,7 +8,7 @@
 
 <div
 	class={cn(
-		'relative flex h-[400px] w-[500px] items-center justify-center overflow-hidden rounded-xl border bg-background md:shadow-xl',
+		'relative flex h-[400px] w-[500px] items-center justify-center overflow-hidden rounded-3xl border bg-background shadow',
 		className
 	)}
 >
