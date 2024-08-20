@@ -1,3 +1,7 @@
+<script>
+	import { _ } from 'svelte-i18n';
+</script>
+
 <footer>
 	<div class="mx-auto w-full max-w-screen-xl xl:pb-2">
 		<div class="gap-4 p-4 px-8 py-16 sm:pb-16 md:flex md:items-center md:justify-around">
@@ -8,7 +12,7 @@
 						AI Prompts
 					</span>
 				</a>
-				<p class="w-full">Made with ❤️ by Nano@Gaomingzhao using Magic Template</p>
+				<p class="w-full">{$_('footerSubTitle')}</p>
 			</div>
 
 			<div
