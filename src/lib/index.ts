@@ -12,7 +12,7 @@ export let indexSEO = {
 		'ai, prompts, svelte, sveltekit, tailwindcss, typescript, fast, lightweight, optimized, web application'
 };
 
-// generate and optimized by Llama3.1 70B, prompt is: This page is for the purpose of lists useful and powerful optimized ai prompts, support massive of models like GPT Cluade Llama and Gemini, please generate SEO content according to this SEO data structure, and make it optimized for SEO performance
+// generate and optimized by Llama3.1 70B, prompt is: This page is for the purpose of lists useful and powerful optimized ai prompts, support massive of models like GPT Claude Llama and Gemini, please generate SEO content according to this SEO data structure, and make it optimized for SEO performance
 export let promptsSEO = {
 	title: 'Powerful and Useful AI Prompts for GPT, Claude, Llama, Gemini and more',
 	description:

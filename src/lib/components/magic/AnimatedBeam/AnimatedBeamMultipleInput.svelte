@@ -49,10 +49,10 @@
 			<!-- Div 3 -->
 			<Circle>
 				<img
-					src="/src/lib/imgs/Cluade.svg"
+					src="/src/lib/imgs/Claude.svg"
 					width="40"
 					height="40"
-					alt="Cluade"
+					alt="Claude"
 					bind:this={div3Ref}
 				/>
 			</Circle>
