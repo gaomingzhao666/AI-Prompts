@@ -2,6 +2,7 @@
 	import { cn } from '$lib/utils';
 	import { Copy } from 'lucide-svelte';
 	import { toast } from 'svelte-sonner';
+	import { getModelsUrl } from '$lib/utils/getModelsUrl';
 	import * as Collapsible from '$lib/components/ui/collapsible';
 
 	export let models: string[];
@@ -14,6 +15,9 @@
 		await navigator.clipboard.writeText(promptContent);
 		toast.success('Successfully copied to clipboard!');
 	};
+
+	const modelsUrls: string[] = getModelsUrl(models);
+	$: console.log(modelsUrls);
 </script>
 
 <figure
@@ -44,11 +48,13 @@
 	</div>
 	<blockquote class="mt-2 text-lg">{promptContent}</blockquote>
 
-	<div class="mt-3 h-[24px] w-[24px]">
-		<div class="absolute bottom-5 left-5">
-			<!-- {#each  as } -->
-			<img class=" rounded-full" width="24" height="24" alt="" src="/src/lib/imgs/GPT.svg" />
-			<!-- {/each} -->
+	<div class="h-[24px]">
+		<div class="absolute bottom-5 left-5 flex items-center justify-start space-x-2">
+			{#each modelsUrls as item}
+				<div class="mt-3 h-[24px] w-[24px]">
+					<img class="rounded-full" width="24" height="24" alt="ModelsIcon" src={item} />
+				</div>
+			{/each}
 		</div>
 	</div>
 </figure>
