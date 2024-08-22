@@ -7,18 +7,13 @@
 
 	let prompts: any = new Map();
 
-	// let categories = ['']; // ["foo", "batz"]
-
 	const init = async () => {
 		const res = await fetch('/src/prompts.json').then((res) => res.json());
 		prompts = res;
-		// categories = Object.keys(prompts);
-		console.log(res);
 	};
 
 	onMount(async () => {
 		await init();
-		console.log(prompts);
 	});
 </script>
 
@@ -56,12 +51,6 @@
 						{/each}
 					</Carousel.Content>
 				</Carousel.Root>
-
-				<!-- {#each prompts[category] as prompt}
-					<li>
-						<PromptCard {...prompt} />
-					</li>
-				{/each} -->
 			</div>
 		</div>
 	{/each}

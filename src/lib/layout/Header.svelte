@@ -1,9 +1,6 @@
 <script lang="ts">
 	import DarkModeSwitcher from '$lib/components/DarkModeSwitcher.svelte';
 	import LangSwitcher from '$lib/components/LangSwitcher.svelte';
-	import { cn } from '$lib/utils';
-	import { AlignJustify, XIcon } from 'lucide-svelte';
-	import { fly } from 'svelte/transition';
 
 	let innerWidth = 0;
 </script>
