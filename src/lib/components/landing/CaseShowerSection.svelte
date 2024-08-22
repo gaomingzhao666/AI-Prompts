@@ -5,53 +5,6 @@
 
 	let prompts: any;
 
-	// 		models: ['GPT'],
-	// 		title: '@Bhide',
-	// 		desc: 'Noicee work. I love it. Keep it up.',
-	// 		category: 'Language Learning',
-	// 		promptContent: 'This is a Example'
-	// 	},
-	// 	{
-	// 		models: ['GPT'],
-	// 		title: '@Bhide',
-	// 		desc: 'Noicee work. I love it. Keep it up.',
-	// 		category: 'Language Learning',
-	// 		promptContent: 'This is a Example'
-	// 	},
-	// 	{
-	// 		models: ['GPT'],
-	// 		title: '@Bhide',
-	// 		desc: 'Noicee work. I love it. Keep it up.',
-	// 		category: 'Language Learning',
-	// 		promptContent: 'This is a Example'
-	// 	},
-	// 	{
-	// 		models: ['GPT'],
-	// 		title: '@Bhide',
-	// 		desc: 'Noicee work. I love it. Keep it up.',
-	// 		category: 'Language Learning',
-	// 		promptContent: 'This is a Example'
-	// 	},
-	// 	{
-	// 		models: ['GPT'],
-	// 		title: '@Bhide',
-	// 		desc: 'Noicee work. I love it. Keep it up.',
-	// 		category: 'Language Learning',
-	// 		promptContent: 'This is a Example'
-	// 	},
-	// 	{
-	// 		models: ['GPT'],
-	// 		title: '@Bhide',
-	// 		desc: 'Noicee work. I love it. Keep it up.',
-	// 		category: 'Language Learning',
-	// 		promptContent: 'This is a Example'
-	// 	}
-	// ];
-	// const run = async () => {
-	// 	const prompts = await fetch('/src/prompts.json').then((res) => res.json());
-	// 	console.log(prompts);
-	// };
-	// run();
 	const init = async () => {
 		const res = await fetch('/src/prompts.json').then((res) => res.json());
 		prompts = res;
