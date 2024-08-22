@@ -1,7 +1,7 @@
 // place files you want to import through the `$lib` alias in this folder.
 
 // generate and optimized by Llama3.1 70B
-export let indexSEO = {
+export const indexSEO = {
 	title: 'AI Prompts - Fast and Lightweight Svelte & TailwindCSS Project',
 	description:
 		'AI Prompts is a fast and lightweight web application that lists useful and optimized AI prompts. This project is built using Svelte, TailwindCSS, and TypeScript, making it so fast and lightweight. The prompts are optimized for massive of models like GPT, Claude, Llama, Gemini, and more',
@@ -13,7 +13,7 @@ export let indexSEO = {
 };
 
 // generate and optimized by Llama3.1 70B, prompt is: This page is for the purpose of lists useful and powerful optimized ai prompts, support massive of models like GPT Claude Llama and Gemini, please generate SEO content according to this SEO data structure, and make it optimized for SEO performance
-export let promptsSEO = {
+export const promptsSEO = {
 	title: 'Powerful and Useful AI Prompts for GPT, Claude, Llama, Gemini and more',
 	description:
 		'The prompts are optimized for massive of models like GPT, Claude, Llama, Gemini, and more. You can get those prompts and use them conveniently.',
