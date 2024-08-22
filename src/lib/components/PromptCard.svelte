@@ -2,13 +2,14 @@
 	import { cn } from '$lib/utils';
 	import { Copy } from 'lucide-svelte';
 	import { toast } from 'svelte-sonner';
+	import * as Tooltip from '$lib/components/ui/tooltip';
 	import { getModelsUrl } from '$lib/utils/getModelsUrl';
-	import * as Collapsible from '$lib/components/ui/collapsible';
+	// import * as Collapsible from '$lib/components/ui/collapsible';
 
 	export let models: string[];
 	export let title: string;
 	export let desc: string;
-	export let category: string;
+	// export let category: string;
 	export let promptContent: string;
 
 	const copyContent = async () => {
@@ -39,12 +40,20 @@
 			<p class="text-sm font-medium dark:text-white/40">{desc}</p>
 		</div>
 
-		<button
-			class="group-hover:block group-hover:cursor-pointer md:hidden"
-			on:click={() => copyContent()}
-		>
-			<Copy />
-		</button>
+		<Tooltip.Root>
+			<Tooltip.Trigger>
+				<button
+					class="group-hover:block group-hover:cursor-pointer md:hidden"
+					on:click={() => copyContent()}
+				>
+					<Copy />
+				</button>
+			</Tooltip.Trigger>
+
+			<Tooltip.Content>
+				<p>Copy to dashboard</p>
+			</Tooltip.Content>
+		</Tooltip.Root>
 	</div>
 	<blockquote class="mt-2 text-lg">{promptContent}</blockquote>
 

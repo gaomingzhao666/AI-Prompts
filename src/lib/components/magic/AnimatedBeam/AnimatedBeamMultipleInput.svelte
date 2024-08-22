@@ -1,7 +1,6 @@
 <script lang="ts">
 	// Scroll down to see the original Component
 	import { cn } from '$lib/utils';
-	import { Languages } from 'lucide-svelte';
 	import AnimatedBeam from '$lib/components/magic/AnimatedBeam/AnimatedBeam.svelte';
 	import Circle from '$lib/components/magic/AnimatedBeam/Circle.svelte';
 	let containerRef;
@@ -10,7 +9,6 @@
 	let div2Ref;
 	let div3Ref;
 	let div4Ref;
-	let div5Ref;
 	let div6Ref;
 	let div7Ref;
 	let className: any = '';

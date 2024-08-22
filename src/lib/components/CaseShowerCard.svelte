@@ -5,7 +5,7 @@
 	export let models: string[];
 	export let title: string;
 	export let desc: string;
-	export let category: string;
+	// export let category: string;
 	export let promptContent: string;
 
 	const modelsUrls: string[] = getModelsUrl(models);

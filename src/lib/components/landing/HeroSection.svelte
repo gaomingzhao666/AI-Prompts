@@ -4,20 +4,7 @@
 	import OrbitingCircles from '$lib/components/magic/OrbitingCircles/OrbitingCircles.svelte';
 	import AnimatedBeamMultipleInput from '$lib/components/magic/AnimatedBeam/AnimatedBeamMultipleInput.svelte';
 	import AnimatedShinyText from '$lib/components/magic/AnimatedShinyText/AnimatedShinyText.svelte';
-	import BorderBeam from '$lib/components/magic/borderbeam/BorderBeam.svelte';
 	import Button from '$lib/components/ui/button/button.svelte';
-	import type { ObserverEventDetails } from 'svelte-inview';
-	import { inview } from 'svelte-inview';
-	import { goto } from '$app/navigation';
-
-	// Images
-	import HeroDarkImg from '$lib/imgs/hero-dark.png';
-	import HeroLightImg from '$lib/imgs/hero-light.png';
-	let inView = false;
-	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
-		// console.log(detail);
-		inView = detail.inView;
-	};
 </script>
 
 <section id="hero" class="relative mx-auto mt-32 max-w-7xl px-6 text-center md:px-8">
