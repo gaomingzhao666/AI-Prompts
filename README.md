@@ -41,6 +41,7 @@
 
 <p align="center">
     <img src="/SCREENSHOT/index-mockup.png">
+    <img src="/SCREENSHOT/prompts-mockup.png">
 </p>
 
 > The image shown here is a index-page for laptop-size, [click here](https://github.com/gaomingzhao666/AI-Prompts/tree/main/SCREENSHOT) to see more detailed screenshot for this application.
@@ -97,6 +98,7 @@ You can access the `prompts.json` file and add prompts by abiding the existed da
 <p align="left">https://github.com/sveltejs/svelte/issues/9287</p>
 <p align="left">https://kit.svelte.dev/docs/configuration#alias</p>
 <p align="left"> https://www.freecodecamp.org/news/copy-text-to-clipboard-javascript/</p>
+<p align="left"> https://github.com/orgs/vercel/discussions/5208</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

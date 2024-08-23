@@ -41,6 +41,7 @@
 
 <p align="center">
     <img src="/SCREENSHOT/index-mockup.png">
+    <img src="/SCREENSHOT/prompts-mockup.png">
 </p>
 
 > 上方是适用于平板设备尺寸的 index 页面截图, [点击此处](https://github.com/gaomingzhao666/AI-Prompts/tree/main/SCREENSHOT) 可查看更多详细截图
@@ -97,6 +98,7 @@ $ npm run dev # 运行
 <p align="left">https://github.com/sveltejs/svelte/issues/9287</p>
 <p align="left">https://kit.svelte.dev/docs/configuration#alias</p>
 <p align="left"> https://www.freecodecamp.org/news/copy-text-to-clipboard-javascript/</p>
+<p align="left"> https://github.com/orgs/vercel/discussions/5208</p>
 
 <p align="right">(<a href="#readme-top">返回顶层</a>)</p>
 
