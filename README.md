@@ -27,10 +27,10 @@
 <details open>
   <summary>Directory</summary>
   <ul>
-    <li><a href="#introduction-of-project">About the Project</a></li>
-    <li><a href="#build-with">Tech Stack</a></li>
-    <li><a href="#Runtime-requirement">Prerequisites</a></li>
-    <li><a href="#how-to-run-this-application">Getting Started</a></li>
+    <li><a href="#about-the-project">About the Project</a></li>
+    <li><a href="#tech-stack">Tech Stack</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#references">References</a></li>
     <li><a href="#contributor">Contributor</a></li>
     <li><a href="#license">LICENSE</a></li>
