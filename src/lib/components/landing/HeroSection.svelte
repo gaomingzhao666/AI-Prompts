@@ -8,17 +8,20 @@
 </script>
 
 <section id="hero" class="relative mx-auto mt-32 max-w-7xl px-6 text-center md:px-8">
-	<div
-		class="backdrop-filter-[12px] group inline-flex h-7 -translate-y-4 animate-fade-in items-center justify-between gap-1 rounded-full border border-white/5 bg-white/10 px-3 text-xs transition-all ease-in hover:cursor-pointer hover:bg-white/20 dark:text-black"
-	>
-		<AnimatedShinyText class="inline-flex items-center justify-center">
-			<span>{$_('heroReleaseNotice')}</span>
-			{' '}
-			<ArrowRightIcon
-				class="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5"
-			/>
-		</AnimatedShinyText>
-	</div>
+	<a href="https://github.com/gaomingzhao666/AI-Prompts/releases">
+		<div
+			class="backdrop-filter-[12px] group inline-flex h-7 -translate-y-4 animate-fade-in items-center justify-between gap-1 rounded-full border border-white/5 bg-white/10 px-3 text-xs transition-all ease-in hover:cursor-pointer hover:bg-white/20 dark:text-black"
+		>
+			<AnimatedShinyText class="inline-flex items-center justify-center">
+				<span>{$_('heroReleaseNotice')}</span>
+				{' '}
+				<ArrowRightIcon
+					class="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5"
+				/>
+			</AnimatedShinyText>
+		</div>
+	</a>
+
 	<h1
 		class="-translate-y-4 animate-fade-in text-balance bg-gradient-to-br from-black from-30% to-black/40 bg-clip-text py-6 text-5xl font-medium leading-none tracking-tighter text-transparent opacity-0 [--animation-delay:200ms] dark:from-white dark:to-white/40 sm:text-6xl md:text-7xl lg:text-8xl"
 	>
