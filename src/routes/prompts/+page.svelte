@@ -3,12 +3,13 @@
 	import { onMount } from 'svelte'
 	import * as Carousel from '$lib/components/ui/carousel/index.js'
 	import PromptCard from '$lib/components/PromptCard.svelte'
+	import promptsData from '../../prompts.json'
 	import { addSpaceBetweenUppercase } from '$lib/utils/addSpaceBetweenUppercase'
 
 	let prompts: any = new Map()
 
 	const init = async () => {
-		const res = await fetch('/src/prompts.json').then((res) => res.json())
+		const res = promptsData
 		prompts = res
 	}
 

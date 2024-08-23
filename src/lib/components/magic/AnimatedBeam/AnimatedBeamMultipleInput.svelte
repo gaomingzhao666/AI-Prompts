@@ -3,6 +3,12 @@
 	import { cn } from '$lib/utils'
 	import AnimatedBeam from '$lib/components/magic/AnimatedBeam/AnimatedBeam.svelte'
 	import Circle from '$lib/components/magic/AnimatedBeam/Circle.svelte'
+	import Gemini from '$lib/imgs/Gemini.svg'
+	import GPT from '$lib/imgs/GPT.svg'
+	import Claude from '$lib/imgs/Claude.svg'
+	import Llama from '$lib/imgs/Llama.svg'
+	import star from '$lib/imgs/star.png'
+
 	let containerRef
 	// Circles
 	let div1Ref
@@ -32,43 +38,25 @@
 		<div class="flex flex-col justify-center gap-2">
 			<!-- Div 1 -->
 			<Circle>
-				<img
-					src="/src/lib/imgs/Gemini.svg"
-					width="40"
-					height="40"
-					alt="Gemini"
-					bind:this={div1Ref}
-				/>
+				<img src={Gemini} width="40" height="40" alt="Gemini" bind:this={div1Ref} />
 			</Circle>
 			<!-- Div 2 -->
 			<Circle>
-				<img src="/src/lib/imgs/GPT.svg" width="40" height="40" alt="GPT" bind:this={div2Ref} />
+				<img src={GPT} width="40" height="40" alt="GPT" bind:this={div2Ref} />
 			</Circle>
 			<!-- Div 3 -->
 			<Circle>
-				<img
-					src="/src/lib/imgs/Claude.svg"
-					width="40"
-					height="40"
-					alt="Claude"
-					bind:this={div3Ref}
-				/>
+				<img src={Claude} width="40" height="40" alt="Claude" bind:this={div3Ref} />
 			</Circle>
 			<!-- Div 4 -->
 			<Circle>
-				<img src="/src/lib/imgs/Llama.svg" width="40" height="40" alt="Llama" bind:this={div4Ref} />
+				<img src={Llama} width="40" height="40" alt="Llama" bind:this={div4Ref} />
 			</Circle>
 		</div>
 		<div class="flex flex-col justify-center">
 			<!-- Div 6 -->
 			<Circle>
-				<img
-					src="/src/lib/imgs/star.png"
-					width="40"
-					height="40"
-					alt="AI Prompts logo"
-					bind:this={div6Ref}
-				/>
+				<img src={star} width="40" height="40" alt="AI Prompts logo" bind:this={div6Ref} />
 			</Circle>
 		</div>
 		<div class="flec-col flex justify-center">

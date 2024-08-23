@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { cn } from '$lib/utils'
-	import {} from 'lucide-svelte'
+	import TailwindCSS from '$lib/imgs/tailwindcss.svg'
+	import Typescript from '$lib/imgs/typescript.svg'
+	import Shadcn from '$lib/imgs/shadcn.svg'
 	import Circles from '$lib/components/magic/OrbitingCircles/Circles.svelte'
 	let className: any = ''
 	export { className as class }
@@ -20,8 +22,8 @@
 
 	<!--  Inner Circles  -->
 	<Circles class="h-[50px] w-[50px] border-none bg-transparent" duration={20} radius={80}>
-		<!-- Open AI -->
-		<img src="/src/lib/imgs/tailwindcss.svg" class="h-full w-full" alt="" />
+		<!-- TailwindCSS icon -->
+		<img src={TailwindCSS} class="h-full w-full" alt="TailwindCSS" />
 	</Circles>
 	<Circles
 		class="h-[50px] w-[50px] border-none bg-transparent"
@@ -29,8 +31,8 @@
 		radius={80}
 		delay={-10}
 	>
-		<!-- typescript -->
-		<img src="/src/lib/imgs/typescript.svg" class="h-full w-full rounded" alt="" />
+		<!-- Typescript -->
+		<img src={Typescript} class="h-full w-full rounded" alt="Typescript" />
 	</Circles>
 
 	<!-- Outer Circles (reverse)  -->
@@ -59,6 +61,6 @@
 		reverse
 	>
 		<!-- Shadcn -->
-		<img src="/src/lib/imgs/shadcn.svg" class="h-full w-full rounded" alt="" />
+		<img src={Shadcn} class="h-full w-full rounded" alt="Shadcn" />
 	</Circles>
 </div>

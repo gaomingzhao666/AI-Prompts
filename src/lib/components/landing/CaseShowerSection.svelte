@@ -1,13 +1,13 @@
 <script lang="ts">
 	import Marquee from '$lib/components/magic/marquee/Marquee.svelte'
 	import CaseShowerCard from '$lib/components/CaseShowerCard.svelte'
+	import promptsData from '../../../prompts.json'
 	import { onMount } from 'svelte'
 
 	let prompts: any
 
 	const init = async () => {
-		const res = await fetch('/src/prompts.json').then((res) => res.json())
-		prompts = res
+		prompts = promptsData
 	}
 	let firstRow: any = []
 	let secondRow: any = []
