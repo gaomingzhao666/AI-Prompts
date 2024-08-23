@@ -1,20 +1,20 @@
 <script lang="ts">
-	import { promptsSEO } from '$lib';
-	import { onMount } from 'svelte';
-	import * as Carousel from '$lib/components/ui/carousel/index.js';
-	import PromptCard from '$lib/components/PromptCard.svelte';
-	import { addSpaceBetweenUppercase } from '$lib/utils/addSpaceBetweenUppercase';
+	import { promptsSEO } from '$lib'
+	import { onMount } from 'svelte'
+	import * as Carousel from '$lib/components/ui/carousel/index.js'
+	import PromptCard from '$lib/components/PromptCard.svelte'
+	import { addSpaceBetweenUppercase } from '$lib/utils/addSpaceBetweenUppercase'
 
-	let prompts: any = new Map();
+	let prompts: any = new Map()
 
 	const init = async () => {
-		const res = await fetch('/src/prompts.json').then((res) => res.json());
-		prompts = res;
-	};
+		const res = await fetch('/src/prompts.json').then((res) => res.json())
+		prompts = res
+	}
 
 	onMount(async () => {
-		await init();
-	});
+		await init()
+	})
 </script>
 
 <svelte:head>

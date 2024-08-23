@@ -1,10 +1,10 @@
 <script lang="ts">
-	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
-	import { Button } from '$lib/components/ui/button/index.js';
-	import { Languages } from 'lucide-svelte';
-	import { locale } from 'svelte-i18n';
+	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js'
+	import { Button } from '$lib/components/ui/button/index.js'
+	import { Languages } from 'lucide-svelte'
+	import { locale } from 'svelte-i18n'
 
-	let position = 'bottom';
+	let position = 'bottom'
 </script>
 
 <DropdownMenu.Root>

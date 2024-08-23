@@ -1,10 +1,10 @@
 <script>
-	import GoogleSvg from '$lib/imgs/Google.svg';
-	import GitHubSvg from '$lib/imgs/GitHub.svg';
-	import MetaSvg from '$lib/imgs/Meta.svg';
-	import MicrosoftSvg from '$lib/imgs/Microsoft.svg';
-	import ANTHROPSvg from '$lib/imgs/ANTHROP.svg';
-	import { _ } from 'svelte-i18n';
+	import GoogleSvg from '$lib/imgs/Google.svg'
+	import GitHubSvg from '$lib/imgs/GitHub.svg'
+	import MetaSvg from '$lib/imgs/Meta.svg'
+	import MicrosoftSvg from '$lib/imgs/Microsoft.svg'
+	import ANTHROPSvg from '$lib/imgs/ANTHROP.svg'
+	import { _ } from 'svelte-i18n'
 </script>
 
 <section id="clients" class="mx-auto max-w-7xl px-6 text-center md:px-8">

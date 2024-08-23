@@ -1,12 +1,12 @@
 <script lang="ts">
-	import { cn } from '$lib/utils';
-	let className: any = '';
-	export { className as class };
-	export let reverse: boolean = false;
-	export let duration: number = 20;
-	export let delay: number = 0;
-	export let radius: number = 50;
-	export let path: boolean = true;
+	import { cn } from '$lib/utils'
+	let className: any = ''
+	export { className as class }
+	export let reverse: boolean = false
+	export let duration: number = 20
+	export let delay: number = 0
+	export let radius: number = 50
+	export let path: boolean = true
 </script>
 
 {#if path}
@@ -29,7 +29,7 @@
 		style:--duration={duration}
 		style:--radius={radius}
 		class={cn(
-			'animate-orbit absolute flex h-full w-full transform-gpu items-center justify-center rounded-full border bg-black/10 [animation-delay:calc(var(--delay)*1000ms)] dark:bg-white/10',
+			'absolute flex h-full w-full transform-gpu animate-orbit items-center justify-center rounded-full border bg-black/10 [animation-delay:calc(var(--delay)*1000ms)] dark:bg-white/10',
 			{ '[animation-direction:reverse]': reverse },
 			className
 		)}

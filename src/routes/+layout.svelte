@@ -1,9 +1,9 @@
 <script>
-	import '../app.css';
-	import { ModeWatcher } from 'mode-watcher';
-	import { Toaster } from '$lib/components/ui/sonner';
-	import Footer from '$lib/layout/Footer.svelte';
-	import Header from '$lib/layout/Header.svelte';
+	import '../app.css'
+	import { ModeWatcher } from 'mode-watcher'
+	import { Toaster } from '$lib/components/ui/sonner'
+	import Footer from '$lib/layout/Footer.svelte'
+	import Header from '$lib/layout/Header.svelte'
 </script>
 
 <div class="min-h-screen bg-background font-sans antialiased">

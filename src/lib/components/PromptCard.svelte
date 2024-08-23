@@ -1,24 +1,24 @@
 <script lang="ts">
-	import { cn } from '$lib/utils';
-	import { Copy } from 'lucide-svelte';
-	import { toast } from 'svelte-sonner';
-	import * as Tooltip from '$lib/components/ui/tooltip';
-	import { getModelsUrl } from '$lib/utils/getModelsUrl';
+	import { cn } from '$lib/utils'
+	import { Copy } from 'lucide-svelte'
+	import { toast } from 'svelte-sonner'
+	import * as Tooltip from '$lib/components/ui/tooltip'
+	import { getModelsUrl } from '$lib/utils/getModelsUrl'
 	// import * as Collapsible from '$lib/components/ui/collapsible';
 
-	export let models: string[];
-	export let title: string;
-	export let desc: string;
+	export let models: string[]
+	export let title: string
+	export let desc: string
 	// export let category: string;
-	export let promptContent: string;
+	export let promptContent: string
 
 	const copyContent = async () => {
-		await navigator.clipboard.writeText(promptContent);
-		toast.success('Successfully copied to clipboard!');
-	};
+		await navigator.clipboard.writeText(promptContent)
+		toast.success('Successfully copied to clipboard!')
+	}
 
-	const modelsUrls: string[] = getModelsUrl(models);
-	$: console.log(modelsUrls);
+	const modelsUrls: string[] = getModelsUrl(models)
+	$: console.log(modelsUrls)
 </script>
 
 <figure

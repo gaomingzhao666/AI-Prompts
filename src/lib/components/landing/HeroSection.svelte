@@ -1,10 +1,10 @@
 <script lang="ts">
-	import { ArrowRightIcon } from 'lucide-svelte';
-	import { _ } from 'svelte-i18n';
-	import OrbitingCircles from '$lib/components/magic/OrbitingCircles/OrbitingCircles.svelte';
-	import AnimatedBeamMultipleInput from '$lib/components/magic/AnimatedBeam/AnimatedBeamMultipleInput.svelte';
-	import AnimatedShinyText from '$lib/components/magic/AnimatedShinyText/AnimatedShinyText.svelte';
-	import Button from '$lib/components/ui/button/button.svelte';
+	import { ArrowRightIcon } from 'lucide-svelte'
+	import { _ } from 'svelte-i18n'
+	import OrbitingCircles from '$lib/components/magic/OrbitingCircles/OrbitingCircles.svelte'
+	import AnimatedBeamMultipleInput from '$lib/components/magic/AnimatedBeam/AnimatedBeamMultipleInput.svelte'
+	import AnimatedShinyText from '$lib/components/magic/AnimatedShinyText/AnimatedShinyText.svelte'
+	import Button from '$lib/components/ui/button/button.svelte'
 </script>
 
 <section id="hero" class="relative mx-auto mt-32 max-w-7xl px-6 text-center md:px-8">

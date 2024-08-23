@@ -1,8 +1,8 @@
 <script lang="ts">
-	import DarkModeSwitcher from '$lib/components/DarkModeSwitcher.svelte';
-	import LangSwitcher from '$lib/components/LangSwitcher.svelte';
+	import DarkModeSwitcher from '$lib/components/DarkModeSwitcher.svelte'
+	import LangSwitcher from '$lib/components/LangSwitcher.svelte'
 
-	let innerWidth = 0;
+	let innerWidth = 0
 </script>
 
 <svelte:window bind:innerWidth />

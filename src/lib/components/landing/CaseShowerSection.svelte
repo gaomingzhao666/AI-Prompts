@@ -1,22 +1,22 @@
 <script lang="ts">
-	import Marquee from '$lib/components/magic/marquee/Marquee.svelte';
-	import CaseShowerCard from '$lib/components/CaseShowerCard.svelte';
-	import { onMount } from 'svelte';
+	import Marquee from '$lib/components/magic/marquee/Marquee.svelte'
+	import CaseShowerCard from '$lib/components/CaseShowerCard.svelte'
+	import { onMount } from 'svelte'
 
-	let prompts: any;
+	let prompts: any
 
 	const init = async () => {
-		const res = await fetch('/src/prompts.json').then((res) => res.json());
-		prompts = res;
-	};
-	let firstRow: any = [];
-	let secondRow: any = [];
+		const res = await fetch('/src/prompts.json').then((res) => res.json())
+		prompts = res
+	}
+	let firstRow: any = []
+	let secondRow: any = []
 	onMount(async () => {
-		await init();
+		await init()
 
-		firstRow = prompts.JapaneseMaster;
-		secondRow = prompts.CodeMaster;
-	});
+		firstRow = prompts.JapaneseMaster
+		secondRow = prompts.CodeMaster
+	})
 </script>
 
 <div

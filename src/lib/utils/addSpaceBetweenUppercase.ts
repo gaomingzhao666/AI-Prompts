@@ -1,5 +1,5 @@
 export const addSpaceBetweenUppercase = (vocabulary: string): string =>
-	vocabulary.replace(/([A-Z])/g, ' $1').trim();
+	vocabulary.replace(/([A-Z])/g, ' $1').trim()
 
 // Example usage
 // const result = addSpaceBetweenUppercase("HelloWorldThisIsTypeScript");

@@ -1,16 +1,16 @@
 <script lang="ts">
-	import { cn } from '$lib/utils';
-	import { getModelsUrl } from '$lib/utils/getModelsUrl';
+	import { cn } from '$lib/utils'
+	import { getModelsUrl } from '$lib/utils/getModelsUrl'
 
-	export let models: string[];
-	export let title: string;
-	export let desc: string;
+	export let models: string[]
+	export let title: string
+	export let desc: string
 	// export let category: string;
-	export let promptContent: string;
+	export let promptContent: string
 
-	const modelsUrls: string[] = getModelsUrl(models);
+	const modelsUrls: string[] = getModelsUrl(models)
 
-	$: console.log(modelsUrls);
+	$: console.log(modelsUrls)
 </script>
 
 <figure

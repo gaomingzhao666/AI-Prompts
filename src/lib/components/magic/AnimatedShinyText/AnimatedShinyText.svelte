@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { cn } from '$lib/utils';
+	import { cn } from '$lib/utils'
 
-	export let shimmerWidth = 100;
-	let className: any = '';
-	export { className as class };
+	export let shimmerWidth = 100
+	let className: any = ''
+	export { className as class }
 </script>
 
 <p

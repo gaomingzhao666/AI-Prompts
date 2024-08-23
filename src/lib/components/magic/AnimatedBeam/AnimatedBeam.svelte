@@ -1,30 +1,30 @@
 <script lang="ts">
-	import { cn } from '$lib/utils';
-	import { onMount, tick } from 'svelte';
-	import { M, Motion } from 'svelte-motion';
+	import { cn } from '$lib/utils'
+	import { onMount, tick } from 'svelte'
+	import { M, Motion } from 'svelte-motion'
 
-	let className: any = '';
-	export { className as class };
-	export let containerRef;
-	export let fromRef;
-	export let toRef;
-	export let curvature = 0;
-	export let reverse = false; // Include the reverse pro;
-	export let duration = Math.random() * 3 + 4;
-	export let delay = 0;
-	export let pathColor = 'gray';
-	export let pathWidth = 2;
-	export let pathOpacity = 0.2;
-	export let gradientStartColor = '#ffaa40';
-	export let gradientStopColor = '#9c40ff';
-	export let startXOffset = 0;
-	export let startYOffset = 0;
-	export let endXOffset = 0;
-	export let endYOffset = 0;
+	let className: any = ''
+	export { className as class }
+	export let containerRef
+	export let fromRef
+	export let toRef
+	export let curvature = 0
+	export let reverse = false // Include the reverse pro;
+	export let duration = Math.random() * 3 + 4
+	export let delay = 0
+	export let pathColor = 'gray'
+	export let pathWidth = 2
+	export let pathOpacity = 0.2
+	export let gradientStartColor = '#ffaa40'
+	export let gradientStopColor = '#9c40ff'
+	export let startXOffset = 0
+	export let startYOffset = 0
+	export let endXOffset = 0
+	export let endYOffset = 0
 
-	let id = crypto.randomUUID().slice(0, 8);
-	let pathD = '';
-	let svgDimensions = { width: 0, height: 0 };
+	let id = crypto.randomUUID().slice(0, 8)
+	let pathD = ''
+	let svgDimensions = { width: 0, height: 0 }
 
 	// Calculate the gradient coordinates based on the reverse prop
 	let gradientCoordinates = reverse
@@ -39,43 +39,43 @@
 				x2: ['0%', '100%'],
 				y1: ['0%', '0%'],
 				y2: ['0%', '0%']
-			};
+			}
 
 	let updatePath = () => {
-		let containerRect = containerRef?.getBoundingClientRect();
-		let rectA = fromRef?.getBoundingClientRect();
-		let rectB = toRef?.getBoundingClientRect();
+		let containerRect = containerRef?.getBoundingClientRect()
+		let rectA = fromRef?.getBoundingClientRect()
+		let rectB = toRef?.getBoundingClientRect()
 
-		let svgWidth = containerRect.width;
-		let svgHeight = containerRect.height;
-		svgDimensions.width = svgWidth;
-		svgDimensions.height = svgHeight;
+		let svgWidth = containerRect.width
+		let svgHeight = containerRect.height
+		svgDimensions.width = svgWidth
+		svgDimensions.height = svgHeight
 
-		let startX = rectA.left - containerRect.left + rectA.width / 2 + startXOffset;
-		let startY = rectA.top - containerRect.top + rectA.height / 2 + startYOffset;
-		let endX = rectB.left - containerRect.left + rectB.width / 2 + endXOffset;
-		let endY = rectB.top - containerRect.top + rectB.height / 2 + endYOffset;
+		let startX = rectA.left - containerRect.left + rectA.width / 2 + startXOffset
+		let startY = rectA.top - containerRect.top + rectA.height / 2 + startYOffset
+		let endX = rectB.left - containerRect.left + rectB.width / 2 + endXOffset
+		let endY = rectB.top - containerRect.top + rectB.height / 2 + endYOffset
 
-		let controlY = startY - curvature;
-		let d = `M ${startX},${startY} Q ${(startX + endX) / 2},${controlY} ${endX},${endY}`;
-		pathD = d;
-	};
+		let controlY = startY - curvature
+		let d = `M ${startX},${startY} Q ${(startX + endX) / 2},${controlY} ${endX},${endY}`
+		pathD = d
+	}
 	onMount(async () => {
 		await tick().then(() => {
-			updatePath();
+			updatePath()
 			const resizeObserver = new ResizeObserver((entries) => {
 				// For all entries, recalculate the path
 				for (let entry of entries) {
-					updatePath();
+					updatePath()
 				}
-			});
+			})
 
 			// Observe the container element
 			if (containerRef) {
-				resizeObserver.observe(containerRef);
+				resizeObserver.observe(containerRef)
 			}
-		});
-	});
+		})
+	})
 </script>
 
 <svg

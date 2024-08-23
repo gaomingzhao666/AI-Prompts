@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { cn } from '$lib/utils';
-	import { _ } from 'svelte-i18n';
-	export let reverse: boolean = false;
+	import { cn } from '$lib/utils'
+	import { _ } from 'svelte-i18n'
+	export let reverse: boolean = false
 </script>
 
 <div

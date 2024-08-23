@@ -1,9 +1,9 @@
 <script>
-	import { indexSEO } from '$lib';
-	import ClientSection from '$lib/components/landing/ClientSection.svelte';
-	import CaseShowerSection from '$lib/components/landing/CaseShowerSection.svelte';
-	import HeroSection from '$lib/components/landing/HeroSection.svelte';
-	import SphereMask from '$lib/components/magic/SphereMask/SphereMask.svelte';
+	import { indexSEO } from '$lib'
+	import ClientSection from '$lib/components/landing/ClientSection.svelte'
+	import CaseShowerSection from '$lib/components/landing/CaseShowerSection.svelte'
+	import HeroSection from '$lib/components/landing/HeroSection.svelte'
+	import SphereMask from '$lib/components/magic/SphereMask/SphereMask.svelte'
 </script>
 
 <svelte:head>

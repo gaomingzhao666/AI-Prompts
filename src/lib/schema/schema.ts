@@ -1,7 +1,7 @@
-import { z } from 'zod';
+import { z } from 'zod'
 
 export const formSchema = z.object({
-	email: z.string().email(),
-});
+	email: z.string().email()
+})
 
-export type FormSchema = typeof formSchema;
+export type FormSchema = typeof formSchema

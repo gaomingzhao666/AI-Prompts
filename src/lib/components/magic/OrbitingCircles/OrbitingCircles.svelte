@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { cn } from '$lib/utils';
-	import {} from 'lucide-svelte';
-	import Circles from '$lib/components/magic/OrbitingCircles/Circles.svelte';
-	let className: any = '';
-	export { className as class };
+	import { cn } from '$lib/utils'
+	import {} from 'lucide-svelte'
+	import Circles from '$lib/components/magic/OrbitingCircles/Circles.svelte'
+	let className: any = ''
+	export { className as class }
 </script>
 
 <div

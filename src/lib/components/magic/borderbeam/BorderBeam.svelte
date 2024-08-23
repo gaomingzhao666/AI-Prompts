@@ -1,17 +1,17 @@
 <script lang="ts">
-	import { cn } from '$lib/utils';
+	import { cn } from '$lib/utils'
 
-	export let size = 200;
-	export let duration = 15;
-	export let anchor = 90;
-	export let borderWidth = 1.5;
-	export let colorFrom = '#ffaa40';
-	export let colorTo = '#9c40ff';
-	export let delay = 0;
-	let delaySec = delay + 's';
+	export let size = 200
+	export let duration = 15
+	export let anchor = 90
+	export let borderWidth = 1.5
+	export let colorFrom = '#ffaa40'
+	export let colorTo = '#9c40ff'
+	export let delay = 0
+	let delaySec = delay + 's'
 
-	let className: any = '';
-	export { className as class };
+	let className: any = ''
+	export { className as class }
 </script>
 
 <div

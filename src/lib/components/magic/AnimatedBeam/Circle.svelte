@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { cn } from '$lib/utils';
+	import { cn } from '$lib/utils'
 
-	let className: any = '';
-	export { className as class };
+	let className: any = ''
+	export { className as class }
 </script>
 
 <div
