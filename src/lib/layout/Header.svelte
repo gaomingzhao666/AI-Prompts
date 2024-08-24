@@ -1,6 +1,8 @@
 <script lang="ts">
 	import DarkModeSwitcher from '$lib/components/DarkModeSwitcher.svelte'
 	import LangSwitcher from '$lib/components/LangSwitcher.svelte'
+	import githubIcon from '$lib/imgs/GithubIcon.svg'
+	import githubDarkIcon from '$lib/imgs/GithubDarkIcon.svg'
 
 	let innerWidth = 0
 </script>
@@ -16,15 +18,15 @@
 		<div class="flex items-center space-x-3">
 			<a href="https://github.com/gaomingzhao666/AI-Prompts">
 				<img
-					src="/src/lib/imgs/GithubDarkIcon.svg"
-					alt="GithubIcon"
+					src={githubDarkIcon}
+					alt="GithubDarkIcon"
 					width="32"
 					class="hidden hover:cursor-pointer hover:opacity-80 dark:block"
 				/>
 
 				<!-- light mode -->
 				<img
-					src="/src/lib/imgs/GithubIcon.svg"
+					src={githubIcon}
 					alt="GithubIcon"
 					width="32"
 					class="block hover:cursor-pointer hover:opacity-80 dark:hidden"
