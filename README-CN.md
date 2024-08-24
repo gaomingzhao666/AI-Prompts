@@ -20,7 +20,7 @@
       <strong> · </strong>
     <a href="https://github.com/gaomingzhao666/AI-Prompts/blob/master/README-CN.md">简体中文</a>
       <strong> · </strong>
-    <a href="https://github.com/gaomingzhao666/AI-Prompts/blob/master/README-JP.md">日本語</a>
+    <a href="https://github.com/gaomingzhao666/AI-Prompts/blob/master/README-JA.md">日本語</a>
   </p>
 </div>
 
