@@ -45,5 +45,14 @@
 			"models": ["GPT", "Gemini", "Claude", "Llama"],
 			"promptContent": "I will give you a JSON file structure and the corresponding data content, I will use it as the localization of my web application, help me translate it into Japanese and keep it accurate and simple."
 		}
+	],
+	"Interviewer": [
+		{
+			"title": "Japanese IT Interviewer",
+			"desc": "Training Japanese for an IT interview",
+			"category": "Interviewer",
+			"models": ["GPT", "Gemini"],
+			"promptContent": "As you are a japanese recruiter and there have a position of frontend engineer that need a candidate who have skills in ts, js, vue ecosystem and more about frontend fields, please interview me using japanese and ask me professional questions continually until I say done, at same time you need to fix it and give me some examples if any fault in text."
+		}
 	]
 }
