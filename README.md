@@ -99,6 +99,7 @@ You can access the `prompts.json` file and add prompts by abiding the existed da
 <p align="left">https://kit.svelte.dev/docs/configuration#alias</p>
 <p align="left"> https://www.freecodecamp.org/news/copy-text-to-clipboard-javascript/</p>
 <p align="left"> https://github.com/orgs/vercel/discussions/5208</p>
+<p align="left"> https://rubyyagi.com/how-to-truncate-long-text-and-show-read-more-less-button/</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
