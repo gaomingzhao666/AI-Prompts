@@ -7,7 +7,7 @@
 	import GPT from '$lib/imgs/GPT.svg'
 	import Claude from '$lib/imgs/Claude.svg'
 	import Llama from '$lib/imgs/Llama.svg'
-	// import * as Collapsible from '$lib/components/ui/collapsible';
+	import { _ } from 'svelte-i18n'
 
 	export let models: string[]
 	export let title: string
@@ -23,7 +23,7 @@
 
 <figure
 	class={cn(
-		'group relative h-72 w-96 overflow-ellipsis rounded-3xl border p-5',
+		'group relative min-h-72 w-96 rounded-3xl border p-5',
 		// light styles
 		'border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]',
 		// dark styles
@@ -51,13 +51,18 @@
 			</Tooltip.Trigger>
 
 			<Tooltip.Content>
-				<p>Copy to dashboard</p>
+				<p>{$_('copyTip')}</p>
 			</Tooltip.Content>
 		</Tooltip.Root>
 	</div>
-	<blockquote class="mt-2 text-lg">{promptContent}</blockquote>
 
-	<div class="mt-3 h-[24px]">
+	<article>
+		<p class="mt-2" id="promptContent">
+			{promptContent}
+		</p>
+	</article>
+
+	<div class="mt-3 h-[24px] w-[24px]">
 		<div class="absolute bottom-5 left-5 flex items-center justify-start space-x-2">
 			<!-- Icon Array -->
 			<!-- Can not iterating models array in here, because it is not allow to parse native images -->
